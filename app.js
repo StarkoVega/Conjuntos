@@ -59,3 +59,13 @@ function complemento() {
   c = c.join(", ");
   document.querySelector(".complemento--resultado").value = c;
 }
+
+function reiniciar() {
+  document.querySelectorAll(".form__input").forEach((element) => {
+    element.value = "";
+  });
+}
+
+function ejemplo1() {
+  document.querySelector(".interseccion--a")
+}
