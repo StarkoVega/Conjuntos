@@ -16,21 +16,21 @@
           <ul class="nav__list">
             <li class="nav__link">
               <a
-                href=""
+                href="#interseccion"
                 class="nav__link--anchor link__hover-effect link__hover-effect--white"
                 >Interseccion</a
               >
             </li>
             <li class="nav__link">
               <a
-                href=""
+                href="#union"
                 class="nav__link--anchor link__hover-effect link__hover-effect--white"
                 >Union</a
               >
             </li>
             <li class="nav__link">
               <a
-                href=""
+                href="#diferencia"
                 class="nav__link--anchor link__hover-effect link__hover-effect--white"
                 >Diferencia</a
               >
@@ -74,6 +74,150 @@
               <div class="form__group">
                 <label class="form__label">B = </label>
                 <input type="text" class="form__input interseccion--b" />
+              </div>
+              <input
+                type="button"
+                value="Intersectar"
+                class="form__btn"
+                onclick="interseccion()"
+              />
+              <div class="form__group">
+                <label class="form__label">A&Intersection;B = </label>
+                <textarea
+                  type="text"
+                  class="form__input interseccion--resultado"
+                  readonly
+                ></textarea>
+              </div>
+              <div class="form__group">
+                <input type="button" value="Ejemplo 1" class="form__btn" />
+                <input type="button" value="Ejemplo 2" class="form__btn" />
+                <input type="button" value="Reiniciar" class="form__btn" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="union">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">Union</h2>
+            <p class="section__para">
+              En la teoría de conjuntos, la unión de dos (o más) conjuntos es
+              una operación que resulta en otro conjunto, cuyos elementos son
+              los mismos de los conjuntos iniciales.
+            </p>
+            <form class="section__form">
+              <div class="form__group">
+                <label class="form__label">A = </label>
+                <input type="text" class="form__input union--a" />
+              </div>
+              <div class="form__group">
+                <label class="form__label">B = </label>
+                <input type="text" class="form__input union--b" />
+              </div>
+              <input
+                type="button"
+                value="Unir"
+                class="form__btn"
+                onclick="union()"
+              />
+              <div class="form__group">
+                <label class="form__label">A&Union;B = </label>
+                <textarea
+                  type="text"
+                  class="form__input union--resultado"
+                  readonly
+                ></textarea>
+              </div>
+              <div class="form__group">
+                <input type="button" value="Ejemplo 1" class="form__btn" />
+                <input type="button" value="Ejemplo 2" class="form__btn" />
+                <input type="button" value="Reiniciar" class="form__btn" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="diferencia">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">Diferencia</h2>
+            <p class="section__para">
+              En teoría de conjuntos, la diferencia de dos conjuntos es una
+              operación que da como resultado otro conjunto con los elementos
+              del primer conjunto sin los elementos del segundo conjunto.
+            </p>
+            <form class="section__form">
+              <div class="form__group">
+                <label class="form__label">A = </label>
+                <input type="text" class="form__input diferencia--a" />
+              </div>
+              <div class="form__group">
+                <label class="form__label">B = </label>
+                <input type="text" class="form__input diferencia--b" />
+              </div>
+              <input
+                type="button"
+                value="Diferencia"
+                class="form__btn"
+                onclick="diferencia()"
+              />
+              <div class="form__group">
+                <label class="form__label">A-B = </label>
+                <textarea
+                  type="text"
+                  class="form__input diferencia--resultado"
+                  readonly
+                ></textarea>
+              </div>
+              <div class="form__group">
+                <input type="button" value="Ejemplo 1" class="form__btn" />
+                <input type="button" value="Ejemplo 2" class="form__btn" />
+                <input type="button" value="Reiniciar" class="form__btn" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="complemento">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">Complemento</h2>
+            <p class="section__para">
+              En teoría de conjuntos, el complemento de un conjunto o conjunto
+              complementario es otro conjunto que contiene todos los elementos
+              que no están en el conjunto original. Para poder definirlo es
+              necesario especificar qué tipo de elementos se están utilizando, o
+              de otro modo, cuál es el conjunto universal.
+            </p>
+            <form class="section__form">
+              <div class="form__group">
+                <label class="form__label">A = </label>
+                <input type="text" class="form__input complemento--a" />
+              </div>
+              <div class="form__group">
+                <label class="form__label">U = </label>
+                <input type="text" class="form__input complemento--b" />
+              </div>
+              <input
+                type="button"
+                value="Complemento"
+                class="form__btn"
+                onclick="complemento()"
+              />
+              <div class="form__group">
+                <label class="form__label">A<sup>c</sup> = </label>
+                <textarea
+                  type="text"
+                  class="form__input complemento--resultado"
+                  readonly
+                ></textarea>
+              </div>
+              <div class="form__group">
+                <input type="button" value="Ejemplo 1" class="form__btn" />
+                <input type="button" value="Ejemplo 2" class="form__btn" />
+                <input type="button" value="Reiniciar" class="form__btn" />
               </div>
             </form>
           </div>
