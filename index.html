@@ -69,11 +69,11 @@
             <form class="section__form">
               <div class="form__group">
                 <label class="form__label">A = </label>
-                <input type="text" class="form__input interseccion--a" />
+                <input type="text" class="form__input interseccion interseccion--a" />
               </div>
               <div class="form__group">
                 <label class="form__label">B = </label>
-                <input type="text" class="form__input interseccion--b" />
+                <input type="text" class="form__input interseccion interseccion--b" />
               </div>
               <input
                 type="button"
@@ -85,14 +85,14 @@
                 <label class="form__label">A&Intersection;B = </label>
                 <textarea
                   type="text"
-                  class="form__input interseccion--resultado"
+                  class="form__input interseccion interseccion--resultado"
                   readonly
                 ></textarea>
               </div>
               <div class="form__group">
-                <input type="button" value="Ejemplo 1" class="form__btn" />
-                <input type="button" value="Ejemplo 2" class="form__btn" />
-                <input type="button" value="Reiniciar" class="form__btn" onclick="reiniciar()" />
+                <input type="button" value="Ejemplo 1" class="form__btn" onclick="ejemplo(1, '.interseccion')" />
+                <input type="button" value="Ejemplo 2" class="form__btn" onclick="ejemplo(2, '.interseccion')" />
+                <input type="button" value="Reiniciar" class="form__btn" onclick="reiniciar('.interseccion')" />
               </div>
             </form>
           </div>
@@ -110,11 +110,11 @@
             <form class="section__form">
               <div class="form__group">
                 <label class="form__label">A = </label>
-                <input type="text" class="form__input union--a" />
+                <input type="text" class="form__input union union--a" />
               </div>
               <div class="form__group">
                 <label class="form__label">B = </label>
-                <input type="text" class="form__input union--b" />
+                <input type="text" class="form__input union union--b" />
               </div>
               <input
                 type="button"
@@ -126,14 +126,14 @@
                 <label class="form__label">A&Union;B = </label>
                 <textarea
                   type="text"
-                  class="form__input union--resultado"
+                  class="form__input union union--resultado"
                   readonly
                 ></textarea>
               </div>
               <div class="form__group">
-                <input type="button" value="Ejemplo 1" class="form__btn" />
-                <input type="button" value="Ejemplo 2" class="form__btn" />
-                <input type="button" value="Reiniciar" class="form__btn" onclick="reiniciar()" />
+                <input type="button" value="Ejemplo 1" class="form__btn" onclick="ejemplo(1, '.union')" />
+                <input type="button" value="Ejemplo 2" class="form__btn" onclick="ejemplo(2, '.union')" />
+                <input type="button" value="Reiniciar" class="form__btn" onclick="reiniciar('.union')" />
               </div>
             </form>
           </div>
@@ -151,11 +151,11 @@
             <form class="section__form">
               <div class="form__group">
                 <label class="form__label">A = </label>
-                <input type="text" class="form__input diferencia--a" />
+                <input type="text" class="form__input diferencia diferencia--a" />
               </div>
               <div class="form__group">
                 <label class="form__label">B = </label>
-                <input type="text" class="form__input diferencia--b" />
+                <input type="text" class="form__input diferencia diferencia--b" />
               </div>
               <input
                 type="button"
@@ -167,14 +167,14 @@
                 <label class="form__label">A-B = </label>
                 <textarea
                   type="text"
-                  class="form__input diferencia--resultado"
+                  class="form__input diferencia diferencia--resultado"
                   readonly
                 ></textarea>
               </div>
               <div class="form__group">
-                <input type="button" value="Ejemplo 1" class="form__btn" />
-                <input type="button" value="Ejemplo 2" class="form__btn" />
-                <input type="button" value="Reiniciar" class="form__btn" onclick="reiniciar()" />
+                <input type="button" value="Ejemplo 1" class="form__btn" onclick="ejemplo(1, '.diferencia')" />
+                <input type="button" value="Ejemplo 2" class="form__btn" onclick="ejemplo(2, '.diferencia')" />
+                <input type="button" value="Reiniciar" class="form__btn" onclick="reiniciar('.diferencia')" />
               </div>
             </form>
           </div>
@@ -194,11 +194,11 @@
             <form class="section__form">
               <div class="form__group">
                 <label class="form__label">A = </label>
-                <input type="text" class="form__input complemento--a" />
+                <input type="text" class="form__input complemento complemento--a" />
               </div>
               <div class="form__group">
                 <label class="form__label">U = </label>
-                <input type="text" class="form__input complemento--b" />
+                <input type="text" class="form__input complemento complemento--b" />
               </div>
               <input
                 type="button"
@@ -210,14 +210,14 @@
                 <label class="form__label">A<sup>c</sup> = </label>
                 <textarea
                   type="text"
-                  class="form__input complemento--resultado"
+                  class="form__input complemento complemento--resultado"
                   readonly
                 ></textarea>
               </div>
               <div class="form__group">
-                <input type="button" value="Ejemplo 1" class="form__btn" />
-                <input type="button" value="Ejemplo 2" class="form__btn" />
-                <input type="button" value="Reiniciar" class="form__btn" onclick="reiniciar()" />
+                <input type="button" value="Ejemplo 1" class="form__btn" onclick="ejemplo(3, '.complemento')" />
+                <input type="button" value="Ejemplo 2" class="form__btn" onclick="ejemplo(4, '.complemento')" />
+                <input type="button" value="Reiniciar" class="form__btn" onclick="reiniciar('.complemento')" />
               </div>
             </form>
           </div>

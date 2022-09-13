@@ -60,12 +60,30 @@ function complemento() {
   document.querySelector(".complemento--resultado").value = c;
 }
 
-function reiniciar() {
-  document.querySelectorAll(".form__input").forEach((element) => {
+function reiniciar(seccion) {
+  document.querySelectorAll(seccion).forEach((element) => {
     element.value = "";
   });
 }
 
-function ejemplo1() {
-  document.querySelector(".interseccion--a")
+function ejemplo(num, seccion) {
+  switch (num) {
+    case 1:
+      document.querySelector(seccion + "--a").value = "a, b, c, d";
+      document.querySelector(seccion + "--b").value = "c, d, e, f";
+      break;
+    case 2:
+      document.querySelector(seccion + "--a").value = "1, 2, 3, 4, 5";
+      document.querySelector(seccion + "--b").value = "4, 5, 6, 7, 8";
+      break;
+    case 3:
+      document.querySelector(seccion + "--a").value = "a, e, i, o, u";
+      document.querySelector(seccion + "--b").value = "a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z";
+      break;
+    case 4:
+      document.querySelector(seccion + "--a").value = "0, 2, 4, 6, 8";
+      document.querySelector(seccion + "--b").value = "0, 1, 2, 3, 4, 5, 6, 7, 8, 9";
+    default:
+      break;
+  }
 }
