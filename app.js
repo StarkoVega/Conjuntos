@@ -78,11 +78,13 @@ function ejemplo(num, seccion) {
       break;
     case 3:
       document.querySelector(seccion + "--a").value = "a, e, i, o, u";
-      document.querySelector(seccion + "--b").value = "a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z";
+      document.querySelector(seccion + "--b").value =
+        "a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z";
       break;
     case 4:
       document.querySelector(seccion + "--a").value = "0, 2, 4, 6, 8";
-      document.querySelector(seccion + "--b").value = "0, 1, 2, 3, 4, 5, 6, 7, 8, 9";
+      document.querySelector(seccion + "--b").value =
+        "0, 1, 2, 3, 4, 5, 6, 7, 8, 9";
     default:
       break;
   }
