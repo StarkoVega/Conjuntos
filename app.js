@@ -12,6 +12,7 @@ function interseccion() {
   a = a.map((element) => trimmer(element));
   b = b.map((element) => trimmer(element));
   let c = a.filter((value) => b.includes(value));
+  c = c.filter((element) => element);
   c = c.join(", ");
   document.querySelector(".interseccion__resultado").value = c;
 }
@@ -29,6 +30,7 @@ function union() {
       c.push(element);
     }
   });
+  c = c.filter((element) => element);
   c = c.join(", ");
   document.querySelector(".union__resultado").value = c;
 }
@@ -41,8 +43,10 @@ function diferencia() {
   a = a.map((element) => trimmer(element));
   b = b.map((element) => trimmer(element));
   let c = a.filter((value) => !b.includes(value));
+  c = c.filter((element) => element);
   c = c.join(", ");
   let d = b.filter((value) => !a.includes(value));
+  d = d.filter((element) => element);
   d = d.join(", ");
   document.querySelector(".diferencia__resultado--a").value = c;
   document.querySelector(".diferencia__resultado--b").value = d;
@@ -56,6 +60,7 @@ function complemento() {
   a = a.map((element) => trimmer(element));
   b = b.map((element) => trimmer(element));
   let c = b.filter((value) => !a.includes(value));
+  c = c.filter((element) => element);
   c = c.join(", ");
   document.querySelector(".complemento__resultado").value = c;
 }
